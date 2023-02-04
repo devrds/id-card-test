@@ -77,6 +77,77 @@
                 <span>Discord</span>
             </a>
         </div>
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/python_64px.png">
+                        </span>
+                        <span class="text">Pyton</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/csharp_64px.png">
+                        </span>
+                        <span class="text">C Sharp</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/swift_64px.png">
+                        </span>
+                        <span class="text">Swift</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/docker_64px.png">
+                        </span>
+                        <span class="text">Docker</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/mongodb_64px.png">
+                        </span>
+                        <span class="text">MongoDB</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/postgresql_64px.png">
+                        </span>
+                        <span class="text">PostGres</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="/nav/Icones/python_64px.png">
+                        </span>
+                        <span class="text">Outro</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                list.forEach((item) =>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink))
+        </script>
     </div>
 </body>
 </html>
