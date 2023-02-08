@@ -55,7 +55,7 @@ body::before {
 }
   
 .profile-card__desc h1 + div {
-    font-size: 20px;
+    font-size: 26px;
 }
   
 .profile-card__info {
@@ -107,6 +107,7 @@ body::before {
 
 .profile-card__social span {
     margin-left: 5px;
+    font-size: 16px;
 }
 
 .profile-card__social a.email {
@@ -140,130 +141,35 @@ body::before {
     }
 }
 
-.navigation {
-    width: 650px;
-    height: 94px;
-    background-color: #ffffff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-}
+@media screen and (max-width: 450px) {
+    .profile-card__social a {
+        display: inline-flex;
+        width: 215px;
+        height: 65px;
+        margin: 12px;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        position: relative;
+        flex-shrink: 0;
+        transition: all 0.2s;
+        text-decoration: none;
+    }
 
-.navigation ul {
-    display: flex;
-    width: 475px;
-}
+    .profile-card__desc h1 + div {
+        font-size: 18px;
+    }
 
-.navigation ul li {
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 1;
-}
+    .profile-card__social span {
+        margin-left: 8px;
+        font-size: 20px;
+    }
 
-.navigation ul li a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-}
-
-.navigation ul li .icon {
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
-    color: var(--clr);
-}
-
-.navigation ul li.active .icon {
-    transform: translateY(-33px);
-}
-
-.navigation ul li .text {
-    position: absolute;
-    color: var(--clr);
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(50px);
-}
-
-.navigation ul li.active .text {
-    opacity: 1;
-    transform: translateY(1px);
-}
-
-.indicator {
-    position: absolute;
-    top: -37%;
-    width: 94px;
-    height: 94px;
-    background: linear-gradient(45deg, #1da1f2, #0e71c8);
-    border-radius: 50%;
-    border: 6px solid var(--clr);
-    transition: 0.5s;
-}
-
-.indicator::before {
-    content: '';
-    position: absolute;
-    top: 35%;
-    left: -36px;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 5px -10px 0 0 var(--clr);
-}
-
-.indicator::after {
-    content: '';
-    position: absolute;
-    top: 35%;
-    right: -36px;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -5px -10px 0 0 var(--clr);
-}
-
-.navigation ul li:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(70px * 0));
-}
-
-.navigation ul li:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(70px * 1));
-}
-
-.navigation ul li:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(70px * 2));
-}
-
-.navigation ul li:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(70px * 3));
-}
-
-.navigation ul li:nth-child(5).active ~ .indicator {
-    transform: translateX(calc(70px * 4));
-}
-
-.navigation ul li:nth-child(6).active ~ .indicator {
-    transform: translateX(calc(70px * 5));
-}
-
-.navigation ul li:nth-child(7).active ~ .indicator {
-    transform: translateX(calc(70px * 6));
+    .profile-card__info > div > *:first-child {
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
 }

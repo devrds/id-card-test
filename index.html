@@ -17,9 +17,9 @@
 
         <div class="profile-card__desc">
             <h1>Rafael Drigo</h1>
-            <div>Estudante de Engenharia de SoftWare</div>
+            <div>Estudante de Engenharia de Software</div>
             <div style="display: flex;align-items: center;gap: 10px; justify-content: center;">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <circle cx="12" cy="11" r="3"></circle>
                     <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
@@ -77,77 +77,6 @@
                 <span>Discord</span>
             </a>
         </div>
-        <div class="navigation">
-            <ul>
-                <li class="list active">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/python_64px.png">
-                        </span>
-                        <span class="text">Pyton</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/csharp_64px.png">
-                        </span>
-                        <span class="text">C Sharp</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/swift_64px.png">
-                        </span>
-                        <span class="text">Swift</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/docker_64px.png">
-                        </span>
-                        <span class="text">Docker</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/mongodb_64px.png">
-                        </span>
-                        <span class="text">MongoDB</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/postgresql_64px.png">
-                        </span>
-                        <span class="text">PostGres</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <img src="/nav/Icones/python_64px.png">
-                        </span>
-                        <span class="text">Outro</span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
-        </div>
-        <script>
-            const list = document.querySelectorAll('.list');
-            function activeLink(){
-                list.forEach((item) =>
-                item.classList.remove('active'));
-                this.classList.add('active');
-            }
-            list.forEach((item) =>
-            item.addEventListener('click',activeLink))
-        </script>
     </div>
 </body>
 </html>
